@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taqueria "el jefe"</title>
+</head>
+<body>
+    <header>
+        <h1> bienvennidos la taqueria "el jefe"</h1>
+    </header>
+
+    <img src="./el Jefe.png" alt="logo taqueria">
+    
+    <h2>menu</h2>
+    <p>elige algunas de nuestras tacos en el menu principal</p>
+
+    <h3>tacos</h3>
+    <p>puedes pedirlos coomo tu lo queiras</p>
+    <ul>
+        <li>taco al pastor............30$</li>
+        <li>taco de barbacoa..........35$</li>
+        <li>taco de pescado...........43$</li>
+        <li>taco dorado...............50$</li>
+    </ul>
+
+    <h3>taguitos</h3>
+    <p>un pequello bocado para tu paladar</p>
+    <ul>
+        <li>taco de papa..............10$</li>
+        <li>taco de guisado...........25$</li>
+        <li>taco de bistec............25$</li>
+        <li>taco de adovado...........20$</li>
+    </ul>
+
+    <h3>conbos tacos</h3>
+    <p>elige los que mas te guste para ti o a familia</p>
+    <dl>
+        <dt>combo #1 .................120$</dt>
+        <dd>- 2 de pastor, 2 barbacoa, 1 dorado  </dd>
+        <dt>combo #2 .................150$</dt>
+        <dd>- 1 de pescasdo, 3 barbacoa, 2 dorado  </dd>
+        <dt>combo #3 .................210$</dt>
+        <dd>- 2 de pastor, 3 barbacoa, 2 pescado, 4 dorado</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Ubicacion</h2>
+    <p>Ubicacion para su busto</p>
+
+    <table>
+        <tr>
+            <th>Lugar</th>
+            <th>Direccion</th>
+            <Th>Horario</Th>
+        </tr>
+
+        <tr>
+            <th>Norte</th>
+            <th> <a href="https://goo.gl/maps/n9fdYhtf11QADiPy9" target="_blank"> 8.5 Carretera Norte, Subasta 800 Mts al Lago, Managua</a></th>
+            <th>6AM - 4PM</th>
+        </tr>
+     
+        <tr>
+            <th>Central</th>
+            <th> <a href="https://goo.gl/maps/czenL2R1HFiS4VHa8" target="_blank"> A un costado de la esquina sureste del parque de la, Managua</a></th>
+            <th>6AM - 4PM</th>
+        </tr>
+
+        <tr>
+            <th>Sur</th>
+            <th> <a href="https://goo.gl/maps/NqhAnCHEcXt9Xhyk6" target="_blank"> 3Q9M+RXW, Managua</a></th>
+            <th>9AM - 9PM</th>
+        </tr>
+    </table>
+
+    <h2>pedidos</h2>
+    <p>Has tus pedidos aqui</p>
+    
+    <h3>dinos tu Direccion</h3>
+
+    <label for="direccion">es:</label>
+    <input type="text" id="direccion" name="direccion">
+
+    <br>
+    
+    <h3> indica la sucursal mas cercana a tu ubicacion</h3>
+    <p>le recomendamos checkear la ubicacion de la sucursal para su eliccion</p>
+
+    <label for="eligSurcusal">cual??</label>
+    <select id="eligSurcusal" name="eligSurcusal">
+        <option value="Norte">Norte</option>
+        <option value="Central">Central</option>
+        <option value="Sur">Sur</option>
+    </select>
+    
+
+    <hr>
+    <h2>cual es tu orden?</h2>
+    <p>tacos</p>
+
+    <input type="checkbox" id="pastor" name="pastor">
+    <label for="pastor">tacos al pastor</label>
+    <input type="number" id="pastorNum" name="pastorNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="barbacoa" name="barbacoa">
+    <label for="barbacoa">tacos de barbacoa</label>
+    <input type="number" id="barbacoaNum" name="barbacoaNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="pescado" name="pescado">
+    <label for="pescado">taco de pescado</label>
+    <input type="number" id="pescadoNum" name="pescadoNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="dorado" name="dorado">
+    <label for="dorado">taco dorado</label>
+    <input type="number" id="doradoNum" name="doradoNum" placeholder="cuantos?">
+    
+    <hr>
+    <p>taguitos</p>
+    <input type="checkbox" id="papa" name="papa">
+    <label for="papa">taco de papa</label>
+    <input type="number" id="papaNum" name="papaNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="guisado" name="guisado">
+    <label for="guisado">taco de guisado</label>
+    <input type="number" id="guisadoNum" name="guisadoNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="bistec" name="bistec">
+    <label for="bistec">taco de bistec</label>
+    <input type="number" id="bistecNum" name="bistecNum" placeholder="cuantos?">
+    <br>
+    <input type="checkbox" id="adovado" name="adovado">
+    <label for="adovado">taco de adovado</label>
+    <input type="number" id="adovadoNum" name="adovadoNum" placeholder="cuantos?">
+
+    <hr>
+    <p>deseas un conbos</p>
+    <label for="rangoCombo1">combo #1</label>
+    <input type="range" id="rangoCombo1" name="rangoCombo1" nim="0" max="5" value="0">
+    <br>
+    <label for="rangoCombo2">combo #2</label>
+    <input type="range" id="rangoCombo2" name="rangoCombo2" nim="0" max="5" value="0">
+    <br>
+    <label for="rangoCombo3">combo #3</label>
+    <input type="range" id="rangoCombo1" name="rangoCombo1" nim="0" max="5" value="0">
+
+
+</body>
+</html>
